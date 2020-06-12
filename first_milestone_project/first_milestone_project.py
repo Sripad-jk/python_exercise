@@ -1,19 +1,33 @@
 TTT_Board = [' ']*10
 
 def init_board():
+	'''
+    This function initializes the board 
+	'''
     global TTT_Board 
     TTT_Board = [' ']*10
     TTT_Board[0] = '#'
 
 def read_cell(pos):
+	'''
+    This function is used to read a cell in the TTT board
+	'''
     global TTT_Board
     return(TTT_Board[pos])
 
 def write_cell(cell_pos, mark):
+	'''
+    This function is used to write a cell in the TTT board
+	'''
     global TTT_Board
     TTT_Board[cell_pos] = mark
 
 def check_empty_cell(pos):
+	'''
+    This function checks if the passed cell is empty 
+    Return TRUE -> cell empty
+    Return FALSE -> Cell not empty
+	'''
     if(read_cell(pos) == ' '):
         return True
     else:
