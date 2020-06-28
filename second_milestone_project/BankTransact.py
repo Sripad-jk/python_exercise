@@ -1,4 +1,4 @@
-class BankRoll():
+class BankTransact():
     '''
     This class maintains the users credit balance account
     '''
@@ -26,3 +26,9 @@ class BankRoll():
         '''
         self.amount = self.amount + credit
         print(f'Current Balance = {self.amount}')
+
+    def current_balance(self):
+        '''
+        The routine displays current account balance
+        '''
+        return(self.amount)
