@@ -1,6 +1,6 @@
 import random
 
-class Card_Draw():
+class DrawDeck():
     
     '''
        This class helps in drawing cards
